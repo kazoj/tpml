@@ -26,6 +26,7 @@ Après réglage des hyperparamètres, les autres modèles (SVM RBF, k-NN, SVM li
 | [soutenance_projet_ml.pdf](soutenance_projet_ml.pdf) | Support de soutenance |
 | `datasets/` | Données [Wine Quality (UCI)](https://archive.ics.uci.edu/ml/datasets/Wine+Quality) |
 | `figures/` | Figures produites par le notebook |
+| `tests/` | Tests unitaires (pytest) des fonctions du notebook : chargement, nettoyage, découpage, prétraitement, métriques |
 | `requirements.txt`, `Dockerfile` | Environnement d'exécution |
 
 ## Lancer le projet
@@ -53,6 +54,15 @@ python3.11 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 jupyter lab
+```
+
+### Tests unitaires
+
+Les tests chargent les fonctions directement depuis `projet.ipynb` (aucun code dupliqué) et s'exécutent en quelques secondes :
+
+```bash
+pytest                                  # en local
+docker run --rm wine-quality pytest     # avec Docker
 ```
 
 Toutes les étapes aléatoires utilisent une graine fixe (`SEED = 42`) : les résultats sont reproductibles.
