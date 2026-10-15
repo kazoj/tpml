@@ -1,6 +1,7 @@
 # Classification de la qualité du vin
 
-**Auteurs :** Ahmad TAY, Ahmed-Ghazi BLAIECH, Hassan SHRAIM
+**Étudiant :** Zakaria Hentabli
+**Professeur :** Ahmed-Ghazi Blaiech
 **Cours :** Machine Learning 1, 2026-2027
 
 Prédire si un vin est « bon » (note ≥ 7) ou non à partir de 11 mesures physico-chimiques (alcool, acidité, sucre résiduel, SO₂…). Les vins rouges et blancs sont traités séparément. Le sujet complet est dans [projet.md](projet.md).
